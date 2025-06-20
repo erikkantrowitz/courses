@@ -30,10 +30,12 @@ This repository contains code and assignments from various programming and compu
 ---
 
 ## 🗂 Folder Layout
+```
 courses/
-├── C For Everyone/
-├── C-structured/
+├── C for Everyone/
+├── C_structured/
 └── meta-html-and-css-in-depth/
+```
 
 
 Each course folder contains:
