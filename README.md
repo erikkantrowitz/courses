@@ -10,14 +10,14 @@ This repository contains code and assignments from various programming and compu
 - Institution: University of California, Santa Cruz
 - Language: C
 - Topics: Memory management, basic syntax, I/O operations
-- Status: In Progress / Completed
+- Status: Completed
 
 ---
 
 ### 📘 [C Structured Programming](https://www.coursera.org/learn/structured-programming)
-- Institution: TBD (fill in)
+- Institution: University of California, Santa Cruz
 - Focused on modular C, control structures, functions, and pointers
-- Status: In Progress / Completed
+- Status: In Progress
 
 ---
 
@@ -25,7 +25,7 @@ This repository contains code and assignments from various programming and compu
 - Provider: Meta / Coursera
 - Topics: Flexbox, Grid, accessibility, responsive design
 - Role: Foundation for full front-end stack
-- Status: In Progress / Completed
+- Status: Completed
 
 ---
 
