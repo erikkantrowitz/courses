@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Form Practice</title>
+  <meta name="description" content="A brief description">
+  <meta name="author" content="Your Site Name">
+
+  <!-- Open Graph Protocol -->
+  <!-- 
+  <meta property="og:title" content="A brief description">
+  <meta property="og:type"  content="website">
+  <meta property="og:url"   content="https://www.mysite">
+  <meta property="og:description" content="A brief description">
+  <meta property="og:image" content="image.png">
+  -->
+
+  <!--
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  -->
+  <!-- Prompt: Create a form that collects:
+
+A username
+
+An email address
+
+A password
+
+A favorite color
+
+A birthdate-->
+  <!-- Include your CSS files here -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header>
+    <!-- Add your website name or logo here -->
+    <p>This is a Practice Form</p>
+  </header>
+  <nav>
+    <!-- Add your website navigation here -->
+    
+  </nav>
+  <main>
+    <!-- Add your main content here -->
+    <form action="your-server-endpoint" method="post">
+      <label for="uname">Username</label><br>
+      <input type="text" id="uname" name="username" required></input><br>
+
+      <label for="pword">Password</label><br>
+      <input type="password" id="pword" name="password" required> </input><br>
+
+      <label for="bday">birthdate</label><br>
+      <input type="date" id="bday" name="birthdate"> </input><br>
+
+      <label for="choose">Interestse</label><br>
+      <select name="options" id="choose">
+        <option value="Drums">Drums</option>
+        <option value="HTML/CSS">HTML/CSS</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="React.js">React.js</option>
+      </select>
+      <br>
+
+      <label for="mydl">Choose an item</label><br>
+      <input list="items" name="mydl" id="mydl">
+      <datalist id="items">
+        <option id="item1">Item1</option>
+        <option id="item2">Item2</option>
+        <option id="item3">Item3</option>
+        <option id="item4">Item4</option>
+      </datalist><br>
+
+      <fieldset>
+        <legend>Qualifications</legend>
+        <label for="pdegree">Primary Degree:</label>
+        <input type="text" id="pdegree" name="degree" value="Masters"><br> 
+        <label for="fos">Specialty:</label><br> 
+        <input type="text" id="fos" name="field" value="Psychology"><br> 
+      </fieldset>
+
+      <br>
+      <button type="submit" >Click Me <br>Please</button>
+  </form>
+  <br><br>
+
+  </main>
+  <footer>
+    <!-- Add copyright notices and other footer content here -->
+    <p>Footer</p>
+  </footer>
+
+  <!-- Include your JavaScript files here -->
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
