@@ -20,12 +20,12 @@ header > img {
     margin-left: auto;
     margin-right: auto;
     height: 12rem;
-    margin-bottom: 3rem;
 }
 
 nav {
-   background: linear-gradient(135deg, #495e57, #025b2a);
-   border: 3px solid whitesmoke;
+  	background: linear-gradient(135deg, #495e57, #025b2a);
+  	border: 3px solid whitesmoke;
+	padding: 1rem 0;
 }
 
 nav ul {
@@ -34,14 +34,14 @@ nav ul {
     text-align: center;
     justify-content: space-between;
     width:75%;
-    margin: 0 auto;
+	margin: 0 auto;
+	flex-wrap: wrap;
 }
 
 nav li {
     display: inline-block;
     text-align: center;
-    height: 2rem;
-    width: 15rem;
+	flex: 1 1 auto;
 }
 
 nav li:active {
@@ -101,6 +101,7 @@ footer div {
   border-top-right-radius: 15%;
   border-bottom-left-radius: 15%;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .promo-section > article:hover {
@@ -148,15 +149,26 @@ article img {
 }
 
 @media (max-width: 600px) {
-    body {
+    html, body {
+        display: flex;
+        flex-direction:column;
+		margin: 0;
+		padding: 0;
+		overflow-x: hidden;
+    }
+
+    .main-content, section:nth-of-type(2) {
         display: flex;
         flex-direction:column;
     }
-    .promo-section {
-        display: inline;
-    }
-    .main-content {
-        display: flex;
-        flex-direction:column;
-    }
+	
+	nav ul {
+		flex-direction: column;
+		align-items: center;
+	}
+	nav li {
+		width: 100%;
+		text-align: center;
+		padding: 1rem 0;
+	}
   }
