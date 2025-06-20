@@ -20,6 +20,7 @@ header > img {
     margin-left: auto;
     margin-right: auto;
     height: 12rem;
+    margin-bottom: 3rem;
 }
 
 nav {
@@ -33,6 +34,7 @@ nav ul {
     text-align: center;
     justify-content: space-between;
     width:75%;
+    margin: 0 auto;
 }
 
 nav li {
