@@ -1,5 +1,5 @@
 body {
-    background-color: #edefee;
+    background-color: whitesmoke;
     font-family: monospace;
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -22,27 +22,41 @@ header > img {
     height: 12rem;
 }
 
+nav {
+   background: linear-gradient(135deg, #495e57, #025b2a);
+   border: 3px solid whitesmoke;
+}
+
 nav ul {
+    display: flex;
     list-style: none;
     text-align: center;
-    width: 80%;
-    background-color: #b1645f;
-
+    justify-content: space-between;
+    width:75%;
 }
 
 nav li {
-    text-decoration: none;
-    font-size: larger;
-    color: whitesmoke;
     display: inline-block;
+    text-align: center;
     height: 2rem;
-    width: 4rem;
-    border-radius: 8%;
+    width: 15rem;
+}
 
+nav li:active {
+   background: linear-gradient(135deg, #495e57, #025b2a);
+   border: 3px solid whitesmoke;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 24px;
+    color: whitesmoke;
+    gap: 1rem;
 }
 
 section {
     display: flex;
+    justify-content: center;
 }
 
 article {
@@ -60,35 +74,87 @@ footer img {
 footer div {
     flex: 1;
 }
-section:first-child {
-    align-items: center;
-    color: whitesmoke;
-    background-image: url(/frontend/HTML-CSS/meta-portfolio-project/assets/thomas-verbruggen-cVYLIzF6Gh0-unsplash.jpg);
-    height: 10rem;
-    position: relative;
-    justify-content: center;
-    width: 100%;
-    border-width: 3rem;
-    border-radius: 8%;
-}
-section:first-child:hover {
-    box-shadow: 0 2rem 2rem rgba(0,0,0,0.5);
-    transform: scale(1.025);
-    transition: transform .4s ease-in;
-}
-h1 {
-    display: flex;
-    justify-content: center;
 
+.promo-section { /*#495e57   #014421*/
+   background: linear-gradient(135deg, #495e57, #025b2a);
+   border: 3px solid whitesmoke;
 }
-h1 + p {
-    display:flex;
-    justify-content: center;
-    margin-top: 3%;
+
+.main-content {
+   background: linear-gradient(135deg, #495e57, #025b2a);
+   border: 3px solid whitesmoke;
+}
+
+.promo-section > article {
+  background-image: url(assets/thomas-verbruggen-cVYLIzF6Gh0-unsplash.jpg);
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  max-width: 20rem;
+  margin: 2rem auto;
+  height: 10rem;
+  width: 80%;
+  background-color: grey; 
+  border: 2px solid #ccc;
+  border-top-right-radius: 15%;
+  border-bottom-left-radius: 15%;
+  text-align: center;
+}
+
+.promo-section > article:hover {
+    transform: rotateY(360deg);
+	transition: 2.5s;
+}
+
+.promo-section > article h1 {
+  margin-bottom: 0.5rem;
+}
+
+.promo-section > article p {
+  margin-top: 0rem;
 }
 
 section:nth-of-type(2) {
-    background-color: bisque;
-    gap: 1rem;
-    padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 1.5rem;
 }
+
+section:nth-of-type(2) article{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: bisque;
+  padding: 2rem;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+  border: 1px solid #ccc;
+  border-top-right-radius: 15%;
+  border-bottom-left-radius: 15%;
+}
+
+section:nth-of-type(2) article:hover {
+    transform: scale(1.01);
+}
+
+article img {
+    width: 15rem;
+    height: 15rem;
+    border: 3px solid whitesmoke;
+    border-radius: 20%;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+}
+
+@media (max-width: 600px) {
+    body {
+        display: flex;
+        flex-direction:column;
+    }
+    .promo-section {
+        display: inline;
+    }
+    .main-content {
+        display: flex;
+        flex-direction:column;
+    }
+  }
