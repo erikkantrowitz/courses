@@ -29,12 +29,21 @@ This repository contains code and assignments from various programming and compu
 
 ---
 
+### 📗 [Web Development for Beginners: A Curriculum](https://microsoft.github.io/Web-Dev-For-Beginners/#/)
+- Provider: Microsoft / github
+- Topics: Flexbox, Grid, accessibility, responsive design
+- Role: solidifying html/css and establishing real world JavaScript
+- Status: In Progress
+
+---
+
 ## 🗂 Folder Layout
 ```
 courses/
 ├── C for Everyone/
 ├── C_structured/
-└── meta-html-and-css-in-depth/
+├── meta-html-and-css-in-depth/
+└── ms-web-dev/
 ```
 
 
