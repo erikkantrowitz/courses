@@ -1,7 +1,7 @@
 //two grading systems 1-5 (3-5 are passing) and A down to F
 //read in an array determine if the grade is passing put it in an array called studentsWhoPass
-let allStudents = ['A', 'B-', 1, 4, 5, 2]
-let studentsWhoPass = []
+let allStudents = ['A', 'B-', 1, 4, 5, 2, 'C', 1, 4, 'A-'];
+let studentsWhoPass = [];
 
 function passingGrades(grades) {
     let passing = [];
