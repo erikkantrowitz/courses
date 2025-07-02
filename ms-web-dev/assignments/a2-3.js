@@ -22,3 +22,23 @@ function printArray(array) {
 
 studentsWhoPass = passingGrades(allStudents);
 printArray(studentsWhoPass);
+
+/* -------------------------------------- */
+/* --- refactored based on review ------- */
+/* --------- From ChatGPT --------------- */
+/* -------------------------------------- */
+
+const allStudents2 = ['A', 'B-', 1, 4, 5, 2, 'C', 1, 4, 'A-'];
+
+function passingGrades(grades) {
+    const passingLetters = ['A', 'A-', 'B', 'B-', 'C', 'C-'];
+    return grades.filter(grade => {
+        return (
+            (typeof grade === 'number' && grade >= 3) ||
+            (typeof grade === 'string' && passingLetters.includes(grade))
+        );
+    });
+}
+
+const studentsWhoPass2 = passingGrades(allStudents2);
+studentsWhoPass.forEach(WebGLTransformFeedback => console.log(grade));

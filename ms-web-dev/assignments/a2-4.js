@@ -1,11 +1,12 @@
 //Create a program that lists every 3rd number between 1-20 and prints it to the console.
 //initiate the arrays
-start = [];
-solution = [];
+let start = [];
+let solution = [];
 
 //set of functions to perform the task
-function arrayGenerate(num) {
+function randeUpTo(num) {
     result = [];
+    validateOneNumber(num);
     for (let i = 1; i < num; i++) {
         result.push(i);
     }
@@ -26,7 +27,13 @@ function printArray (data) {
     for (element of data) console.log(element);
 }
 
+function validateOneNumber(n) {
+    if (!Number.isFinite(n)) {
+        throw new TypeError('The input was not a finite number');
+    }
+}
+
 //run the functions 
-start = arrayGenerate(20);
+start = rangeUpTo(20);
 solution = everyThird(start);
 printArray(solution);
