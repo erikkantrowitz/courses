@@ -1,0 +1,331 @@
+
+/* Start from scratch and try and recreate the end effect in flexbox and/or grid and make it responsive */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+
+#page {
+    display: grid;
+    grid-template: 
+    "h h h" auto
+    "a b c" 85vh
+     / 1fr 4fr 1fr;
+    
+}
+
+h1 {
+    grid-area: h;
+    display: flex;
+    color: blue;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 2px dotted rgb(150, 155, 158);
+    background-color: #eee;
+    height: auto;
+    top: 0px;
+}
+
+#left-container {
+    grid-area: a;
+}
+
+#right-container {
+    grid-area: c;
+}
+
+.plant-holder {
+    justify-content: center;
+    height: 13%;
+    display: flex;
+    padding: 3px;
+}
+
+.plant {
+    max-width: 150%;
+    max-height: 150%;
+    z-index: 2;
+}
+
+#Terrarium {
+    grid-area: b;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid whitesmoke;
+    bottom: 0%;
+    padding:5%;
+    position:relative;
+}
+
+.jar-walls {
+    height: 80%;
+    width: 60%;
+    background: #d1e1df;
+    border-radius: 1rem;   
+    bottom: 0.5%;
+    left: 20%;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 1;
+}
+
+.jar-top {
+    width: 50%;
+    height: 5%;
+    background: #d1e1df;
+    bottom: 80.5%;
+    left: 25%;
+    opacity: 0.7;
+    position: absolute;
+    z-index: 1;
+}
+
+.jar-bottom {
+    width: 50%;
+    height: 1%;
+    background: #d1e1df;
+    bottom: 0%;
+    left: 25%;
+    opacity: 0.7;
+    position: absolute;
+    z-index: 1;
+}
+
+.dirt {
+    width: 60%;
+    height:5%;
+    background: #3a241d;
+    border-radius: 0 0 1rem 1rem;
+    bottom: 1%;
+    left: 20%;
+    opacity: 0.7;
+    position: absolute;
+    z-index: -1;
+}
+
+/******FLEX STYLING BELOW*******/
+/*
+#page {
+    display: flex;
+    flex-direction: row;
+    border: 2px dotted whitesmoke;
+    height: 90vh;
+    overflow: hidden;
+}
+
+h1 {
+    display: flex;
+    flex: 0 0 auto;
+    color: blue;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 2px dotted rgb(150, 155, 158);
+    background-color: #eee;
+    width: 15%;
+    height: auto;
+    top: 0px;
+    padding: 10px;
+}
+
+.plant-holder {
+    justify-content: center;
+    height: 13%;
+    display: flex;
+    padding: 3px;
+}
+
+.plant {
+    max-width: 150%;
+    max-height: 150%;
+    z-index: 2;
+}
+
+#left-container {
+    order: 1;
+}
+
+#Terrarium {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: last baseline;
+    border: 2px solid whitesmoke;
+    width: 65%;
+    order: 2;
+    bottom: 0%;
+    position:relative;
+}
+
+#right-container {
+    order: 3;
+}
+
+.jar-walls {
+    height: 80%;
+    width: 60%;
+    background: #d1e1df;
+    border-radius: 1rem;   
+    bottom: 0.5%;
+    left: 20%;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 1;
+}
+
+.jar-top {
+    width: 50%;
+    height: 5%;
+    background: #d1e1df;
+    bottom: 80.5%;
+    left: 25%;
+    opacity: 0.7;
+    position: absolute;
+    z-index: 1;
+}
+
+.jar-bottom {
+    width: 50%;
+    height: 1%;
+    background: #d1e1df;
+    bottom: 0%;
+    left: 25%;
+    opacity: 0.7;
+    position: absolute;
+    z-index: 1;
+}
+
+.dirt {
+    width: 60%;
+    height:5%;
+    background: #3a241d;
+    border-radius: 0 0 1rem 1rem;
+    bottom: 1%;
+    left: 20%;
+    opacity: 0.7;
+    position: absolute;
+    z-index: -1;
+}
+
+*/
+
+/*---------------- Original styling for reference below --------------------*/
+/*body {
+    font-family: Helvetica, sans-serif;
+}
+
+h1 {
+    color: blue;
+}
+
+.container {
+    background-color: #eee;
+    width: 15%;
+    top: 0px;
+    position: absolute;
+    height: 100%;
+    padding: 10px;
+}
+
+#left-container {
+    left: 0px;
+}
+
+#right-container {
+    right: 0px;
+}
+
+.plant-holder {
+    position: relative;
+    height: 13%;
+    left: -10px;
+}
+
+.plant {
+    position: absolute; 
+    max-width: 150%;
+    max-height: 150%;
+    z-index: 2;
+}
+
+.jar-walls {
+    height: 80%;
+    width: 60%;
+    background: #d1e1df;
+    border-radius: 1rem;   
+    position: absolute;
+    bottom: 0.5%;
+    left: 20%;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.jar-top {
+    width: 50%;
+    height: 5%;
+    background: #d1e1df;
+    position: absolute;
+    bottom: 80.5%;
+    left: 25%;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.jar-bottom {
+    width: 50%;
+    height: 1%;
+    background: #d1e1df;
+    position: absolute;
+    bottom: 0%;
+    left: 25%;
+    opacity: 0.7;
+}
+
+.dirt {
+    width: 60%;
+    height:5%;
+    background: #3a241d;
+    position: absolute;
+    border-radius: 0 0 1rem 1rem;
+    bottom: 1%;
+    left: 20%;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.jar-glossy-short {
+    width: 15px;
+    height: 4%;
+    position: relative;
+    background: whitesmoke;
+    left: 50px;
+    top: 43%;
+    z-index: 6;
+    border-radius: 6px;;
+    opacity: 0.8;
+}
+
+.jar-glossy-long {
+    position:relative;
+    left: 50px;
+    top: 65%;
+    height: 105px;
+    width: 15px;
+    border-radius: 6px;
+    z-index: 6;
+    background-color: whitesmoke;
+    opacity: 0.8;
+}
+*/
