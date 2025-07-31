@@ -1,7 +1,5 @@
 //Fun With Functions
-
 // Write a function called `add` that takes two numbers as arguments and returns their sum.
-
 
 const Calculator = {
     _validateTwoNumbers(a,b) {
