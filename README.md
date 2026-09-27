@@ -4,7 +4,7 @@ This repository contains code and assignments from various programming and compu
 
 ---
 
-## 🔍 Courses Included
+## Courses Included
 
 ### [C for Everyone](https://www.coursera.org/learn/c-for-everyone)
 - Institution: University of California, Santa Cruz
@@ -17,7 +17,7 @@ This repository contains code and assignments from various programming and compu
 ### [C Structured Programming](https://www.coursera.org/learn/structured-programming)
 - Institution: University of California, Santa Cruz
 - Focused on modular C, control structures, functions, and pointers
-- Status: In Progress
+- Status: Completed
 
 ---
 
@@ -33,7 +33,7 @@ This repository contains code and assignments from various programming and compu
 - Provider: Microsoft / github
 - Topics: Flexbox, Grid, accessibility, responsive design
 - Role: solidifying html/css and establishing real world JavaScript
-- Status: In Progress
+- Status: On Hold
 
 ---
 
@@ -54,4 +54,4 @@ Each course folder contains:
 
 ---
 ## Notes
-This repo is intended as a structured record of progress, not a showcase of polished projects. For experimental and exploratory work, see the [labs repo](https://github.com/erikkantrowitz/labs). For production-ready or portfolio pieces, see my other project based repositories.
+This repo is intended as a structured record of progress, not a showcase of polished projects. 
